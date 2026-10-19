@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111a35" />
+  <meta name="description" content="FuturePath: esplora università, ITS Academy e lavoro con un percorso guidato, una roadmap personale e fonti per approfondire." />
+  <title>FuturePath — Il tuo futuro non è una risposta sola</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <button type="button" class="brand" data-action="home" aria-label="FuturePath, torna alla home">
+        <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 42 42" fill="none"><path d="M21 4 37 21 21 38 5 21 21 4Z" stroke="currentColor" stroke-width="2.5"/><path d="m14 26 13-12-4 11-9 1Z" fill="currentColor"/></svg></span>
+        <span>future<span class="brand-accent">path</span><span class="brand-dot">.</span></span>
+      </button>
+      <nav class="nav-actions" aria-label="Menu principale">
+        <button class="nav-link" type="button" data-action="how">Come funziona</button>
+        <button class="nav-link" type="button" data-action="resources">Risorse</button>
+        <button class="nav-dashboard" type="button" data-action="dashboard"><span class="dash-indicator" aria-hidden="true"></span> Il mio percorso</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="view-home" class="view" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> IL FUTURO È UNA DIREZIONE, NON UN'ETICHETTA</p>
+          <h1 id="hero-title">Non devi sapere già <em>chi sarai.</em> Devi iniziare a scoprirlo.</h1>
+          <p class="hero-description">Università, ITS Academy o lavoro? Esplora possibilità che rispecchiano i tuoi interessi, confrontale e costruisci un piano concreto. Un passo alla volta.</p>
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary btn-big" data-action="start">Inizia il tuo percorso <span aria-hidden="true">↗</span></button>
+            <button type="button" class="btn btn-text" data-action="how">Scopri come funziona <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="hero-badges"><span><b>18</b> domande</span><span class="dot-sep"></span><span><b>3</b> direzioni da esplorare</span><span class="dot-sep"></span><span><b>0 €</b> per iniziare</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="art-stars star-a">✳</div><div class="art-stars star-b">✦</div>
+          <div class="art-label art-label-top"><span class="label-icon">✳</span><span>Le tue passioni<br><b>contano davvero</b></span></div>
+          <div class="art-card-main"><div class="art-head">La tua prossima mossa <span>↗</span></div><div class="art-big">Il futuro<br><em>si costruisce.</em></div><div class="art-card-bottom"><div class="art-pips"><i></i><i></i><i></i></div><span>Un passo alla volta</span></div></div>
+          <div class="art-label art-label-bottom"><span class="label-icon mint">✓</span><span>Più di un test<br><b>un piano personale</b></span></div>
+        </div>
+      </div>
+      <div class="container value-bar" id="how-section">
+        <div class="value-item"><div class="value-number">01</div><div><h3>Esplora chi sei</h3><p>Rifletti su passioni, abilità e priorità, senza risposte giuste o sbagliate.</p></div></div>
+        <div class="value-item"><div class="value-number">02</div><div><h3>Scopri 3 possibilità</h3><p>Confronta direzioni di studio e professione con motivazioni chiare.</p></div></div>
+        <div class="value-item"><div class="value-number">03</div><div><h3>Passa all'azione</h3><p>Salva una roadmap, completa attività e torna quando vuoi.</p></div></div>
+      </div>
+      <section class="container feature-section">
+        <div class="section-heading"><p class="eyebrow muted">PENSATO PER STUDENTI REALI</p><h2>Una risposta non basta.<br><em>Serve un percorso.</em></h2></div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon purple">◎</div><h3>Risultati spiegati</h3><p>Non un verdetto: tre ipotesi da verificare sul campo, con indicazioni per iniziare.</p></article>
+          <article class="feature-card"><div class="feature-icon green">▤</div><h3>La tua roadmap</h3><p>Una lista di tappe pratiche, da segnare via via che fai progressi.</p></article>
+          <article class="feature-card"><div class="feature-icon peach">⌁</div><h3>Il tuo spazio</h3><p>Risultati e appunti restano sul tuo dispositivo. Nessuna registrazione richiesta.</p></article>
+        </div>
+      </section>
+    </section>
+
+    <section id="view-quiz" class="view" hidden aria-labelledby="quiz-title">
+      <div class="container quiz-shell">
+        <div class="quiz-top"><button type="button" class="back-link" data-action="home">← Torna alla home</button><span class="quiz-counter" id="quiz-counter">DOMANDA 1 DI 18</span></div>
+        <div class="progress-track"><span id="quiz-progress" class="progress-value" style="width:0%"></span></div>
+        <div class="quiz-inner">
+          <div class="question-phase" id="quiz-phase">01 / INTERESSI</div>
+          <h2 id="quiz-title" tabindex="-1">Che cosa ti incuriosisce?</h2>
+          <p id="quiz-subtitle" class="question-hint">Rispondi d'istinto. Non ci sono risposte corrette.</p>
+          <div id="quiz-options" class="quiz-options" role="radiogroup" aria-labelledby="quiz-title"></div>
+          <div class="quiz-controls"><button type="button" class="btn btn-muted" data-action="prev">← Indietro</button><button type="button" class="btn btn-primary" id="next-button" data-action="next" disabled>Continua <span aria-hidden="true">→</span></button></div>
+          <p class="quiz-reminder">Le risposte vengono utilizzate solo per suggerire percorsi esplorativi e restano in questo browser.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-results" class="view" hidden aria-labelledby="results-title">
+      <div class="container results-shell">
+        <div class="results-head"><div><p class="eyebrow muted">IL TUO PUNTO DI PARTENZA</p><h1 id="results-title">Ci sono più strade <em>per te.</em></h1><p>Queste non sono previsioni né diagnosi attitudinali. Sono tre spunti da esplorare e verificare con persone, corsi e fonti ufficiali.</p></div><span class="results-flower" aria-hidden="true">✳</span></div>
+        <div id="results-profile" class="profile-summary"></div>
+        <div class="results-toolbar"><h2>Le tue 3 direzioni</h2><span>Ordine indicativo, basato sulle risposte</span></div>
+        <div id="results-list" class="results-grid"></div>
+        <div class="action-panel"><div><p class="eyebrow muted">NON FERMARTI AL RISULTATO</p><h2>La parte importante <em>inizia adesso.</em></h2><p>Abbiamo preparato una roadmap con attività concrete per confrontare le tue opzioni.</p></div><button type="button" class="btn btn-primary" data-action="dashboard">Apri la mia roadmap →</button></div>
+        <div class="results-actions"><button type="button" class="btn btn-outline" data-action="restart">Rifai il test</button><button type="button" class="btn btn-outline" data-action="print">Stampa / salva PDF</button></div>
+      </div>
+    </section>
+
+    <section id="view-dashboard" class="view" hidden aria-labelledby="dashboard-title">
+      <div class="container dashboard-shell">
+        <div class="dashboard-hero"><div><p class="eyebrow muted">IL TUO SPAZIO</p><h1 id="dashboard-title">Il tuo futuro, <em>un passo alla volta.</em></h1><p>La tua roadmap personale: esplora, segna i progressi e aggiorna le idee quando cambiano.</p></div><button type="button" class="btn btn-outline" data-action="results">← Rivedi i risultati</button></div>
+        <div id="dashboard-content"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="resources-section"><div class="container footer-grid"><div><div class="footer-brand">future<span>path</span>.</div><p>La curiosità è un buon punto di partenza.</p><small>Progetto sperimentale gratuito per l'orientamento. Non sostituisce colloqui con orientatori, docenti o la verifica dei requisiti ufficiali.</small></div><div><h3>Fonti per continuare</h3><a href="https://www.universitaly.it/it/orientamento-universitario" target="_blank" rel="noopener noreferrer">Universitaly ↗</a><a href="https://excelsiorienta.unioncamere.it/" target="_blank" rel="noopener noreferrer">Excelsiorienta / Unioncamere ↗</a><a href="https://unica.istruzione.gov.it/" target="_blank" rel="noopener noreferrer">UNICA / MIM ↗</a></div><div><h3>I tuoi dati</h3><p>Non serve creare un account. Tutte le risposte, le note e i progressi sono salvati soltanto in questo browser, tramite localStorage. Su altri dispositivi non compariranno automaticamente.</p><button type="button" class="footer-delete" data-action="delete-data">Cancella i miei dati →</button></div></div><div class="container footer-bottom"><span>© <span id="year">2026</span> FuturePath · Prima versione</span><span>Immaginato per chi ha ancora mille possibilità.</span></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
